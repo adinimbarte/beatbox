@@ -104,3 +104,13 @@ After Registration Use Same Account to Login
 <img width="1444" height="686" alt="image" src="https://github.com/user-attachments/assets/6efbdc21-d268-4bac-9d02-d7d782a83631" />
 
 Use the token from login api as a authorization to execute all other endpoints
+
+
+Add Songs
+<img width="1909" height="952" alt="image" src="https://github.com/user-attachments/assets/a21ae5bc-e74b-45ac-9892-386457562cfe" />
+
+Get Songs
+<img width="1807" height="1008" alt="image" src="https://github.com/user-attachments/assets/03de6a85-60fd-45fb-bb4b-f3128c42f86b" />
+
+
+
