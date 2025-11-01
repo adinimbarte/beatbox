@@ -2,6 +2,7 @@ package com.music.player.beatbox.service;
 
 import com.music.player.beatbox.dto.PlaylistDTO;
 import com.music.player.beatbox.dto.SongDTO;
+import com.music.player.beatbox.mapper.SongMapper;
 import com.music.player.beatbox.model.Playlist;
 
 import com.music.player.beatbox.model.Song;
@@ -27,9 +28,14 @@ public class PlaylistService {
         User user = userRepository.findByUsername(username)
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
+
+        List<Song> songs = dto.getSongs().stream()
+                .map(SongMapper::toEntity)
+                .collect(Collectors.toList());
         Playlist playlist = Playlist.builder()
                 .name(dto.getName())
                 .user(user)
+                .songs(songs)
                 .build();
 
         Playlist saved = playlistRepository.save(playlist);
