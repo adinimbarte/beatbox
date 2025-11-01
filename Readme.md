@@ -94,3 +94,13 @@ mvn test
 ---
 
 This structure ensures modularity, scalability, and maintainability of the application.
+
+
+#### ScreenShots
+Register User
+<img width="1509" height="707" alt="image" src="https://github.com/user-attachments/assets/38392bcc-63e8-4691-b8eb-0af56508991c" />
+
+After Registration Use Same Account to Login
+<img width="1444" height="686" alt="image" src="https://github.com/user-attachments/assets/6efbdc21-d268-4bac-9d02-d7d782a83631" />
+
+Use the token from login api as a authorization to execute all other endpoints
