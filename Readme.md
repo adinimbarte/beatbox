@@ -112,5 +112,13 @@ Add Songs
 Get Songs
 <img width="1807" height="1008" alt="image" src="https://github.com/user-attachments/assets/03de6a85-60fd-45fb-bb4b-f3128c42f86b" />
 
+Created Playlist 
+<img width="1817" height="966" alt="image" src="https://github.com/user-attachments/assets/bac8fcc9-4c7b-4062-8f75-5b4ca6ccd7d2" />
+
+Get User Playlists including songs
+<img width="1908" height="977" alt="image" src="https://github.com/user-attachments/assets/18918f38-1b74-4bba-aceb-24924e6f9d26" />
+
+
+
 
 
