@@ -1,0 +1,96 @@
+### README for BeatBox Music App
+
+#### Project Overview
+The **BeatBox Music App** is a Spring Boot-based REST API application for managing user authentication, songs, playlists, and playback functionality. It uses Maven for dependency management and follows the OpenAPI 3.0 specification for API documentation.
+
+---
+
+#### Project Structure
+
+```
+src/
+├── main/
+│   ├── java/
+│   │   └── com.example.beatbox/   # Main Java package
+│   │       ├── controllers/       # REST controllers for handling API requests
+│   │       ├── services/          # Business logic and service layer
+│   │       ├── repositories/      # Data access layer (JPA repositories)
+│   │       ├── models/            # Entity and DTO classes
+│   │       └── config/            # Configuration files (e.g., security, Swagger)
+│   ├── resources/
+│   │   ├── application.properties # Application configuration
+│   │   └── BeatBox_Swagger.json   # OpenAPI specification for the API
+│   └── webapp/                    # Static resources (if applicable)
+├── test/
+│   └── java/                      # Unit and integration tests
+└── pom.xml                        # Maven configuration file
+```
+
+---
+
+#### Key Components
+
+1. **Controllers**:
+    - Handle HTTP requests and map them to service methods.
+    - Example: `PlaylistController`, `SongController`, `PlaybackController`.
+
+2. **Services**:
+    - Contain business logic for the application.
+    - Example: `PlaylistService`, `AuthenticationService`.
+
+3. **Repositories**:
+    - Interface with the database using Spring Data JPA.
+    - Example: `PlaylistRepository`, `SongRepository`.
+
+4. **Models**:
+    - Define entities and DTOs used in the application.
+    - Example: `PlaylistDTO`, `SongDTO`, `UserDTO`.
+
+5. **Configuration**:
+    - Includes security configurations (e.g., JWT authentication) and Swagger setup.
+
+---
+
+#### API Documentation
+The API is documented using OpenAPI 3.0. The specification is available in `src/main/resources/BeatBox_Swagger.json`. Use tools like Swagger UI or Postman to explore the API.
+
+---
+
+#### Build and Run
+1. **Build**: Use Maven to build the project.
+   ```bash
+   mvn clean install
+   ```
+2. **Run**: Start the application.
+   ```bash
+   mvn spring-boot:run
+   ```
+3. **Access**:
+    - API Base URL: `http://localhost:8080`
+    - Swagger UI: `http://localhost:8080/swagger-ui.html` (if configured)
+
+---
+
+#### Dependencies
+- **Spring Boot**: Core framework for the application.
+- **Spring Data JPA**: For database interactions.
+- **Spring Security**: For authentication and authorization.
+- **Swagger/OpenAPI**: For API documentation.
+- **H2/MySQL**: Database (configurable in `application.properties`).
+
+---
+
+#### Security
+The application uses JWT-based authentication. Secure endpoints require a valid token in the `Authorization` header.
+
+---
+
+#### Testing
+Unit and integration tests are located in the `src/test/java` directory. Use the following command to run tests:
+```bash
+mvn test
+```
+
+---
+
+This structure ensures modularity, scalability, and maintainability of the application.
